@@ -1,0 +1,28 @@
+--static values
+SELECT id, first_name , 'New Customer ' AS customer_type
+ FROM customers
+
+ --data definition language DDL
+
+ CREATE TABLE persons (
+    id INT NOT NULL ,
+    person_name VARCHAR(50) NOT NULL,
+    birth_date DATE ,
+    phone VARCHAR(15) NOT NULL,
+
+    CONSTRAINT pk_persons PRIMARY KEY (id)
+
+ )
+
+ ALTER TABLE persons 
+ ADD email VARCHAR (50) NOT NULL
+
+ SELECT * FROM persons
+
+
+ ALTER TABLE persons
+ DROP COLUMN phone
+
+ DROP TABLE persons
+
+ 
